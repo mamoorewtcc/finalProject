@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+    background-color: white;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: none;
+}
+
+/*End reset defaults, below is page specific styling*/
+
+/*DESKTOP OR LAPTOP SETTINGS*/
+    header {
+        background-color: #90d1c9;
+        box-shadow: 0 0 100px #4e8098 inset;
+    }
+
+    header h1 {
+        font-family: "Fredericka the Great", cursive;
+        font-size: 3.5em;
+        text-align: center; 
+        font-weight: lighter;
+        padding: 2% 0;
+        margin: 0;
+        color: black;
+        width: 100%;
+    }
+
+    img.arrow {
+        position: absolute;
+        top: 1.5%;
+        right: 0%;
+        width: 12.5%;
+        transform: rotate(-20deg);
+        z-index: 1;
+    }
+    
+    div.bgimage {
+        height: 1300px;
+    }
+
+    div.bgimage nav {
+        position: relative;
+        top: 0%;
+        right: -1.25%;
+        height: 1300px;
+    }
+
+    nav ul {
+        padding: 50px 100px 0 0;
+        margin-left: 85%;
+    }
+
+    ul li a {
+        writing-mode: vertical-rl;
+        font-family: Courier, Georgia, Times, serif;
+        font-size: 1em;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        border: solid 1px slategray;
+        padding: 10px 10px;
+        box-shadow: -2px -2px 25px #4e8098 inset;
+        border-radius: 0 5px 5px 0;
+        border-left: none;
+        background-color: #90d1c9;
+    }
+
+    ul li a.selected {
+        background: url(images/tabbg.JPG);
+        box-shadow: none;
+        border: 2px solid #4e8098;
+        border-left: none;
+    }
+
+    div.bgimage img.bgimage {
+        position: absolute;
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
+        height: 1300px;
+        width: 85%;
+        margin: 0 12% 0 3%;
+        padding-top: 20px;
+        filter: brightness(104%);
+    }
+
+    aside {
+        position: absolute;
+        left: 8%;
+        top: 24%;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 20%;
+    }
+
+    aside h2 {
+        font-family: "Fredericka the Great", cursive;
+        font-weight: normal;
+        font-size: 1.75em;
+        text-align: center;
+        padding: 10px 0 5px 0;
+        background-color: #4e8098;
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    aside p {
+        font-family: "Shadows into Light", cursive;
+        padding: 10px 10px 10px 10px;
+        font-size: 1.25em;
+        letter-spacing: 2px;
+        text-align: justify;
+    }
+
+    aside img {
+        border: 1px solid black;
+        max-width: 90%;
+        margin: 0 5% 0 5%;
+    }
+
+    .main {
+        position: absolute;
+        left: 28%;
+        top: 24%;
+        width: 57%;
+    }
+
+    .main h2 {
+        font-family: "Fredericka the Great", cursive;
+        font-weight: bold;
+        font-size: 2.5em;
+        letter-spacing: 2px;
+        font-variant: small-caps;
+        text-align: center;
+        padding: 10px 0 15px 0;
+    }
+
+    .main p {
+        font-family: "Shadows into Light", cursive;
+        padding: 0 20px 20px 20px;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        text-align: justify;
+    }
+
+    footer {
+        background-color: #90d1c9;
+        box-shadow: 0 0 75px #4e8098 inset;
+        width: 100%;
+        padding: 20px 20px 20px 35px;
+        margin-top: 1%;
+        text-align: center;
+        font-family: "Shadows into Light", cursive;
+        font-size: 1.25em;
+        letter-spacing: 2px;
+    }
+
+/*TABLET SETTINGS*/
+@media screen and (max-width: 1440px) {
+    img.arrow {
+        position: absolute;
+        top: 5%;
+        right: 0%;
+        width 15%;
+        transform: rotate(-20deg);
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header h1 {
+        font-size: 2.75em;
+    }
+    
+    img.bgimage {
+        height: 1600px;
+        max-width: 85%;
+        margin: 0 3%;
+        padding-top: 10px;
+        filter: brightness(104%);
+    }
+    
+    img.arrow {
+        position: absolute;
+        top: 4%;
+        right: 0%;
+        width: 15%;
+        transform: rotate(-35deg);
+        z-index: 1;
+    }
+    
+    ul li a {
+        writing-mode: vertical-rl;
+        font-family: Courier, Georgia, Times, serif;
+        font-size: 1em;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        border: solid 1px slategray;
+        padding: 10px 10px;
+        box-shadow: -2px -2px 25px #4e8098 inset;
+        border-radius: 0 5px 5px 0;
+        border-left: none;
+        background-color: #90d1c9;
+    }
+    
+    aside {
+        width: 20%;
+        max-height: 100%;
+        left: 8%;
+        top: 15%;
+    }
+    
+    aside p {
+        font-family: "Shadows into Light", cursive;
+        padding: 10px 10px 10px 10px;
+        font-size: 1.25em;
+        letter-spacing: 2px;
+        text-align: justify;
+    }
+    
+    nav {
+    position: absolute;
+    top: 27%;
+    right: 11.5%;
+}
+
+    nav ul {
+        position: absolute;
+        top: 8%;
+        padding: 50px 100px 0 0;
+        margin-left: 85%;
+    }
+    
+    .main {
+        position: absolute;
+        left: 30%;
+        top: 13%;
+        width: 53%;
+    }
+}
+
+/*Adjusting for between tablet and mobile sizes*/
+@media screen and (max-width: 768px) {
+    .main {
+        top: 21%;
+    }
+    
+    img.arrow {
+        position: absolute;
+        top: 8%;
+        right: 0%;
+        width: 17%;
+        transform: rotate(-35deg);
+        z-index: 1;
+    }
+    
+    nav ul {
+        position: absolute;
+        top: 3.5%;
+    }
+    
+    ul li a {
+        writing-mode: vertical-rl;
+        font-family: Courier, Georgia, Times, serif;
+        font-size: 1em;
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+        border: solid 1px slategray;
+        padding: 10px 10px;
+        box-shadow: -2px -2px 25px #4e8098 inset;
+        border-radius: 0 5px 5px 0;
+        border-left: none;
+        background-color: #90d1c9;
+    }
+    
+    aside {
+        position: absolute;
+        top: 50%;
+        width: 75%;
+    }
+    
+    aside img {
+        max-width: 50%;
+        margin: 0 25% 0 25%;
+    }
+    
+    aside span {
+        visibility: collapse;
+    }
+    
+    .main {
+        position: absolute;
+        width: 83%;
+        left: 4%;
+    }
+    
+    .main span {
+        visibility: collapse;
+    }
+}
+
+/*MOBILE SETTINGS*/
+@media screen and (max-width: 425px) {
+    header h1 {
+        font: 1em;
+    }
+    
+    img.arrow {
+        position: absolute;
+        top: 15%;
+        right: 0;
+        width: 15%;
+        transform: rotate(-35deg);
+        z-index: 1;
+    }
+    
+    nav ul {
+        position: absolute;
+        top: 8%;
+    }
+    
+    aside {
+        position: absolute;
+        top: 50%;
+        width: 75%;
+    }
+    
+    aside span {
+        visibility: hidden;
+    }
+    
+    .main {
+        position: absolute;
+        width: 85%;
+        left: 3%;
+    }
+    
+    .main span {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    img.arrow {
+        position: absolute;
+        top: 20%;
+        right: 0;
+        width: 15%;
+        transform: rotate(-35deg);
+        z-index: 1;
+    }
+    
+    nav ul {
+        position: absolute;
+        top: 8%;
+    }
+    
+    aside {
+        position: absolute;
+        top: 50%;
+        width: 75%;
+    }
+    
+    aside span {
+        visibility: hidden;
+    }
+    
+    .main {
+        position: absolute;
+        width: 85%;
+        left: 3%;
+    }
+    
+    .main span {
+        visibility: hidden;
+    }
+}
